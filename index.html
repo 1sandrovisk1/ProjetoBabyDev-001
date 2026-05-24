@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>SoundWave - Web Player</title>
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <nav class="topbar-nav" aria-label="Navegacao principal">
+                <a class="brand" href="#" aria-label="Pagina inicial SoundWave">
+                    <span class="brand-mark"></span>
+                    <span class="sr-only">SoundWave</span>
+                </a>
+
+                <div class="nav-center">
+                    <a class="home-button" href="#" aria-label="Inicio">Inicio</a>
+                    <a class="search-box" href="#" aria-label="Pesquisar">
+                        <span class="search-icon"></span>
+                        <span>O que voce quer ouvir?</span>
+                        <span class="archive-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="account-actions">
+                    <a href="#">Premium</a>
+                    <a href="#">Suporte</a>
+                    <a href="#">Baixar</a>
+                    <span class="nav-divider"></span>
+                    <a class="install-link" href="#">Instalar aplicativo</a>
+                    <a href="#">Inscrever-se</a>
+                    <a class="login-button" href="#">Entrar</a>
+                </div>
+            </nav>
+        </header>
+
+        <aside class="sidebar" aria-label="Biblioteca">
+            <section class="library-panel">
+                <div class="library-title">
+                    <h2>Sua Biblioteca</h2>
+                    <a href="#" aria-label="Adicionar item">+</a>
+                </div>
+
+                <article class="library-card">
+                    <h3>Crie sua primeira playlist</h3>
+                    <p>Organize musicas para cada momento do dia.</p>
+                    <a href="#">Criar playlist</a>
+                </article>
+
+                <article class="library-card">
+                    <h3>Explore novos episodios</h3>
+                    <p>Receba programas e conversas com base no seu gosto.</p>
+                    <a href="#">Procurar agora</a>
+                </article>
+            </section>
+
+            <footer class="sidebar-footer">
+                <a href="#">Legal</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Anuncios</a>
+                <a class="language-button" href="#">Portugues do Brasil</a>
+            </footer>
+        </aside>
+
+        <main class="content">
+            <section class="hero" aria-labelledby="hero-title">
+                <div>
+                    <p class="eyebrow">Web player ficticio</p>
+                    <h1 id="hero-title">Musicas, podcasts e descobertas em um so lugar.</h1>
+                    <p>
+                        Uma interface inspirada no visual atual de streaming: escura, organizada, responsiva e feita
+                        apenas com HTML5 e CSS3.
+                    </p>
+                </div>
+                <a class="primary-button" href="#playlists">Explorar agora</a>
+            </section>
+
+            <section class="shelf" id="playlists" aria-labelledby="playlist-title">
+                <div class="section-heading">
+                    <h2 id="playlist-title">Feito para voce</h2>
+                    <a href="#">Mostrar tudo</a>
+                </div>
+
+                <div class="card-grid">
+                    <article class="music-card">
+                        <div class="cover cover-green">
+                            <span>SW</span>
+                        </div>
+                        <h3>Radar Indie</h3>
+                        <p>Bandas novas e sons para descobrir hoje.</p>
+                    </article>
+
+                    <article class="music-card">
+                        <div class="cover cover-purple">
+                            <span>01</span>
+                        </div>
+                        <h3>Noite Neon</h3>
+                        <p>Pop alternativo com energia de cidade grande.</p>
+                    </article>
+
+                    <article class="music-card">
+                        <div class="cover cover-orange">
+                            <span>FM</span>
+                        </div>
+                        <h3>Favoritas Mix</h3>
+                        <p>Faixas que combinam com seu historico recente.</p>
+                    </article>
+
+                    <article class="music-card">
+                        <div class="cover cover-blue">
+                            <span>LO</span>
+                        </div>
+                        <h3>Lo-fi Cafe</h3>
+                        <p>Batidas leves para concentrar sem pressa.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="shelf" aria-labelledby="artist-title">
+                <div class="section-heading">
+                    <h2 id="artist-title">Artistas populares</h2>
+                    <a href="#">Mostrar tudo</a>
+                </div>
+
+                <div class="artist-grid">
+                    <article class="artist-card">
+                        <div class="artist-photo photo-one"></div>
+                        <h3>Luna Mar</h3>
+                        <p>Artista</p>
+                    </article>
+
+                    <article class="artist-card">
+                        <div class="artist-photo photo-two"></div>
+                        <h3>Rafa Nox</h3>
+                        <p>Artista</p>
+                    </article>
+
+                    <article class="artist-card">
+                        <div class="artist-photo photo-three"></div>
+                        <h3>Clara Beat</h3>
+                        <p>Artista</p>
+                    </article>
+
+                    <article class="artist-card">
+                        <div class="artist-photo photo-four"></div>
+                        <h3>Vento Sul</h3>
+                        <p>Banda</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="shelf" aria-labelledby="albums-title">
+                <div class="section-heading">
+                    <h2 id="albums-title">Singles e albuns que todo mundo gosta</h2>
+                    <a href="#">Mostrar tudo</a>
+                </div>
+
+                <div class="wide-card-grid">
+                    <article class="music-card compact-card">
+                        <div class="cover cover-sky">
+                            <span>WN</span>
+                        </div>
+                        <h3>White Noise</h3>
+                        <p>Sleepy John</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-party">
+                            <span>M2</span>
+                        </div>
+                        <h3>Manifesto Musical 2</h3>
+                        <p>Henrique & Juliano</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-mono">
+                            <span>MY</span>
+                        </div>
+                        <h3>MAYHEM</h3>
+                        <p>Lady Gaya</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-white">
+                            <span>333</span>
+                        </div>
+                        <h3>333</h3>
+                        <p>Matuê</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-stage">
+                            <span>AO</span>
+                        </div>
+                        <h3>Bem-vindo ao Meu Mundo</h3>
+                        <p>Wesley Safadao</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-street">
+                            <span>MC</span>
+                        </div>
+                        <h3>Nada Como um Dia</h3>
+                        <p>Racionais MC's</p>
+                    </article>
+
+                    <article class="music-card compact-card">
+                        <div class="cover cover-live">
+                            <span>TV</span>
+                        </div>
+                        <h3>Tubaroes Ao Vivo</h3>
+                        <p>Diego & Victor Hugo</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="shelf" aria-labelledby="radio-title">
+                <div class="section-heading">
+                    <h2 id="radio-title">Estacoes de radio populares</h2>
+                    <a href="#">Mostrar tudo</a>
+                </div>
+
+                <div class="wide-card-grid">
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-green">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>Henrique & Juliano</h3>
+                        <p>Com Cristiano Araujo, Murilo Huff e mais</p>
+                    </article>
+
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-yellow">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>PEDRO SAMPAIO</h3>
+                        <p>De SoundWave</p>
+                    </article>
+
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-coral">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>Felipe Amorim</h3>
+                        <p>Com Leo Foguete, Manim Vaqueiro e mais</p>
+                    </article>
+
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-pink">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>Grupo Menos E Mais</h3>
+                        <p>Com Vou Zuar, Pixote, Felipe Araujo e mais</p>
+                    </article>
+
+                    <article class="music-card radio-card playing-card">
+                        <div class="radio-cover radio-blue">
+                            <span>RADIO</span>
+                            <strong>CB</strong>
+                        </div>
+                        <h3>Charlie Brown Jr.</h3>
+                        <p>Com Skank, O Rappa, Armandinho e mais</p>
+                    </article>
+
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-rose">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>Jorge & Mateus</h3>
+                        <p>Com Cristiano Araujo, Diego & Victor Hugo e mais</p>
+                    </article>
+
+                    <article class="music-card radio-card">
+                        <div class="radio-cover radio-lime">
+                            <span>RADIO</span>
+                        </div>
+                        <h3>Hungria</h3>
+                        <p>Com Racionais MC's, Tribo da Periferia e mais</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="shelf charts" aria-labelledby="charts-title">
+                <div class="section-heading">
+                    <h2 id="charts-title">Paradas em destaque</h2>
+                    <a href="#">Mostrar tudo</a>
+                </div>
+
+                <div class="chart-grid">
+                    <article class="chart-card chart-purple">
+                        <span class="mini-logo"></span>
+                        <h3>Top Musicas Mundo</h3>
+                        <p>Paradas Musicais da Semana</p>
+                    </article>
+
+                    <article class="chart-card chart-green">
+                        <span class="mini-logo"></span>
+                        <h3>Top Musicas Brasil</h3>
+                        <p>Paradas Musicais da Semana</p>
+                    </article>
+
+                    <article class="chart-card chart-blue">
+                        <span class="mini-logo"></span>
+                        <h3>Top 50</h3>
+                        <p>Global</p>
+                    </article>
+
+                    <article class="chart-card chart-orange">
+                        <span class="mini-logo"></span>
+                        <h3>Top 50</h3>
+                        <p>Brazil</p>
+                    </article>
+                </div>
+            </section>
+
+            <footer class="content-footer">
+                <div class="footer-columns">
+                    <div>
+                        <h2>Empresa</h2>
+                        <a href="#">Sobre</a>
+                        <a href="#">Empregos</a>
+                        <a href="#">For the Record</a>
+                    </div>
+
+                    <div>
+                        <h2>Comunidades</h2>
+                        <a href="#">Para Artistas</a>
+                        <a href="#">Desenvolvedores</a>
+                        <a href="#">Publicidade</a>
+                        <a href="#">Investidores</a>
+                        <a href="#">Fornecedores</a>
+                    </div>
+
+                    <div>
+                        <h2>Links uteis</h2>
+                        <a href="#">Suporte</a>
+                        <a href="#">Aplicativo movel gratis</a>
+                        <a href="#">Popular por pais</a>
+                        <a href="#">Importar suas musicas</a>
+                    </div>
+
+                    <div>
+                        <h2>Planos do SoundWave</h2>
+                        <a href="#">Premium Individual</a>
+                        <a href="#">Premium Duo</a>
+                        <a href="#">Premium Familia</a>
+                        <a href="#">Premium Universitario</a>
+                        <a href="#">SoundWave Free</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">◎</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                    </div>
+                </div>
+
+                <p class="copyright">© 2026 SoundWave AB</p>
+            </footer>
+        </main>
+    </div>
+
+    <footer class="preview-bar">
+        <div>
+            <h2>Preview do SoundWave</h2>
+            <p>Entre para criar playlists, salvar favoritos e acompanhar seus artistas.</p>
+        </div>
+        <a href="#">Inscrever-se gratis</a>
+    </footer>
+</body>
+
+</html>
