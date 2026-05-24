@@ -40,6 +40,10 @@ O objetivo foi praticar estrutura semantica com HTML5, estilizacao moderna com C
 
 ## Como visualizar
 
+Pagina publicada:
+
+https://1sandrovisk1.github.io/ProjetoBabyDev-001.io/
+
 Abra o arquivo `index.html` diretamente no navegador.
 
 Tambem e possivel usar a extensao Live Server no VS Code para visualizar o projeto com recarregamento automatico.
